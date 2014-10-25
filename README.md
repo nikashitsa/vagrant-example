@@ -1,6 +1,17 @@
 Vagrant (CentOS-7.0) Example
 ==========================================================
 
+Для чего это нужно?
+-------------------
+Наверное, каждый сталкивался с проблемой разворачивания локального окружения для разработки.
+С помощью Vagrant эта проблема решается достаточно просто. Под каждый проект создается своя виртуалка со своими необходимыми настройками. Если вдруг виртуалка сломалась по неизвестным никому причинам, просто соберите ее заново.
+
+```bash
+vagrant destroy
+vagrant up
+```
+И продолжайте разработку.
+
 Установка
 -------------------
 
@@ -9,7 +20,7 @@ Vagrant (CentOS-7.0) Example
 Клонируем проект
 
 ```bash
-git clone git@bitbucket.org:nikashitsa/vagrant-example.git
+git clone git@github.org:nikashitsa/vagrant-example.git
 ```
 
 Устанавливаем vagrant плагин (ускоряет повторное разворачивание в разы!)
@@ -53,10 +64,23 @@ vagrant suspend
 vagrant destroy
 ```
 
-Подключение по ssh
+Подключение по ssh (логин: vagrant, пароль: vagrant)
 
 ```bash
 vagrant ssh
 ```
 
 Все команды смотреть [тут](https://docs.vagrantup.com/v2/cli/index.html)
+
+XDEBUG (для PHP девелоперов)
+-------------------
+
+Чтобы заюзать Xdebug нужно:
+1. Установите плагин, который будет добавлять специальную куку в ваши запросы к серверу. Типа вот [этого] (https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc). 
+2. Включить в PphStorm прослушку "Start Listening For PHP Debug Connections".
+3. Поставить брэйкпойнт.
+4. Перезагрузить страницу в браузере.
+
+Чтобы заюзать Xdebug для выполнения CLI скрипта нужно:
+1. Зайти в Vagrant по ssh `vagrant ssh`
+2. Выполнить команду `xdebug_console`
