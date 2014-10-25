@@ -37,6 +37,9 @@ vagrant plugin install vagrant-cachier
 vagrant up
 ```
 
+> Конфигом Vagrant является Vagrantfile из корня проекта.
+> Для установки различных программ в данном примере используется `vagrant/setup.sh` скрипт. [Vagrant документация](https://docs.vagrantup.com/v2/).
+
 Добавляем в файл `/etc/hosts` строчку
 
 ```
