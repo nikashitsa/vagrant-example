@@ -12,6 +12,8 @@ vagrant up
 ```
 И продолжайте разработку.
 
+В примере: виртуалка с CentOS-7.0, apache, mariadb, php, xdebug, composer, bash алиасы.
+
 Установка
 -------------------
 
