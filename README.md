@@ -83,7 +83,7 @@ XDEBUG (для PHP девелоперов)
 Чтобы заюзать Xdebug нужно:
 
 1. Установить плагин, который будет добавлять специальную куку в ваши запросы к серверу. Типа вот [этого] (https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc). 
-2. Включить в PphStorm прослушку "Start Listening For PHP Debug Connections".
+2. Включить в PhpStorm прослушку "Start Listening For PHP Debug Connections".
 3. Поставить брэйкпойнт.
 4. Перезагрузить страницу в браузере.
 
