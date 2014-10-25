@@ -20,7 +20,7 @@ vagrant up
 Клонируем проект
 
 ```
-git clone git@github.org:nikashitsa/vagrant-example.git
+git clone git@github.com:nikashitsa/vagrant-example.git
 ```
 
 Устанавливаем vagrant плагин (ускоряет повторное разворачивание в разы!)
