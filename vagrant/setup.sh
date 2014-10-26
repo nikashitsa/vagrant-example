@@ -19,6 +19,8 @@ envsubst < .bashrc >> /home/vagrant/.bashrc
 
 # php
 yum -y install php php-mysql php-intl php-gd php-devel php-pear
+cp php.ini /etc/php.d/php.ini
+chown -R vagrant:vagrant /var/lib/php/session
 
 # xdebug
 yum -y install gcc gcc-c++
