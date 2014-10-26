@@ -12,6 +12,8 @@ vagrant up
 ```
 И продолжайте разработку.
 
+В примере: виртуалка с CentOS-7.0, apache, mariadb, php, xdebug, composer, bash алиасы.
+
 Установка
 -------------------
 
@@ -34,6 +36,9 @@ vagrant plugin install vagrant-cachier
 ```
 vagrant up
 ```
+
+> Конфигом Vagrant является Vagrantfile из корня проекта.
+> Для установки различных программ в данном примере используется `vagrant/setup.sh` скрипт. [Vagrant документация](https://docs.vagrantup.com/v2/).
 
 Добавляем в файл `/etc/hosts` строчку
 
@@ -77,8 +82,8 @@ XDEBUG (для PHP девелоперов)
 
 Чтобы заюзать Xdebug нужно:
 
-1. Установите плагин, который будет добавлять специальную куку в ваши запросы к серверу. Типа вот [этого] (https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc). 
-2. Включить в PphStorm прослушку "Start Listening For PHP Debug Connections".
+1. Установить плагин, который будет добавлять специальную куку в ваши запросы к серверу. Типа вот [этого] (https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc). 
+2. Включить в PhpStorm прослушку "Start Listening For PHP Debug Connections".
 3. Поставить брэйкпойнт.
 4. Перезагрузить страницу в браузере.
 
