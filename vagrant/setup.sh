@@ -3,7 +3,6 @@
 export V_SERVER=$1
 export V_REMOTE=$2
 
-yum -y update
 cd /vagrant/vagrant/
 
 # apache
