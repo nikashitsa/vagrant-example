@@ -5,6 +5,9 @@ export V_REMOTE=$2
 
 cd /vagrant/vagrant/
 
+# fix network
+rm -f /etc/udev/rules.d/70-persistent-net.rules
+
 # apache
 yum -y install httpd
 echo "ServerName localhost" >> /etc/httpd/conf/httpd.conf
